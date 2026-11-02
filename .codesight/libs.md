@@ -1,0 +1,51 @@
+# Libraries
+
+- `dependency_inversion/product_catalog_before_dependency_inversion.py` — class SQLProductRepository, class ProductCatalog
+- `dependency_inversion/product_catalog_with_dependency_inversion.py`
+  - function ecommerce_main_application: () -> None
+  - class ProductRepository
+  - class SQLProductRepository
+  - class ProductCatalog
+- `dependency_inversion/product_catalog_with_factory.py`
+  - class ProductRepository
+  - class SQLProductRepository
+  - class ProductFactory
+  - class ProductCatalog
+- `dependency_inversion/product_catalog_with_ioc_container.py`
+  - function configure_container: () -> Container
+  - function ecommerce_main_application: (container) -> None
+  - class Container
+- `interface_segregation/printer_example_before_interface_segregation.py`
+  - class Multifunction
+  - class CannonPrinter
+  - class HPPrinterScanner
+  - class XeroxWorkCentre
+- `interface_segregation/printer_example_with_interface_segregation.py`
+  - class Print
+  - class Scan
+  - class Fax
+  - class XeroxWorkCentre
+  - class HPPrinterScanner
+  - class CannonPrinter
+- `open_close/student_example_before_open_close.py` — class Student, class DiscountCalculator
+- `open_close/student_example_with_open_close.py`
+  - class StudentProfile
+  - class DiscountCalculator
+  - class UniversityStudent
+  - class HighSchoolStudent
+  - class ElementarySchoolStudent
+- `single_responsibility/employee_example_before_single_responsibility.py` — class knows, class Employee
+- `single_responsibility/employee_example_with_single_responsibility.py`
+  - class Employee
+  - class EmployeeRepository
+  - class TaxCalculator
+- `substitution/product_example_before_substitution.py`
+  - function client: () -> None
+  - class Product
+  - class InHouseProduct
+  - class InCommerceProduct
+- `substitution/product_example_with_substitution.py`
+  - function client: () -> None
+  - class Product
+  - class InHouseProduct
+  - class InCommerceProduct
